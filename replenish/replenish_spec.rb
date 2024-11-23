@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "rspec"
 require_relative "replenish"
 
@@ -34,13 +36,13 @@ describe "replenish" do
 
   context "with keywords" do
     let(:inventory_notes) {
-      [
-        "gatsby",
-        "gatsby",
-        "Fang",
-        "rings",
-        "lord",
-        "fang"
+      %w[
+        gatsby
+        gatsby
+        Fang
+        rings
+        lord
+        fang
       ]
     }
 
@@ -57,13 +59,13 @@ describe "replenish" do
 
   context "with abbreviated book names" do
     let(:inventory_notes) {
-      [
-        "tgg",
-        "tgg",
-        "wf",
-        "tlotr",
-        "tlotr",
-        "wf"
+      %w[
+        tgg
+        tgg
+        wf
+        tlotr
+        tlotr
+        wf
       ]
     }
 
@@ -88,7 +90,7 @@ describe "replenish" do
         "rings x5",
         "tlotr",
         "fang",
-        "tlotr x2"
+        "tlotr x2",
       ]
     }
 

@@ -1,0 +1,25 @@
+# We have big tests here
+Metrics/BlockLength:
+  Exclude:
+   - "**/*_spec.rb"
+
+# Freedom
+Style/BlockDelimiters:
+  Enabled: false
+
+# Freedom
+Style/Documentation:
+  Enabled: false
+
+# Minimalist Git Diff
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+# Minimalist Git Diff
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+# Minimalist Git Diff
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
+
